@@ -1,0 +1,21 @@
+
+> epr-shadow-guard-week11@1.0.0 test
+> node --test tests/*.test.js
+
+✔ missing downstream proof blocks recovery (0.559625ms)
+✔ duplicate recovery record ID flagged (0.518125ms)
+✔ paper receipt pending human review not rejected solely for paper (0.096541ms)
+✔ material conflict flagged (0.072583ms)
+✔ packaging-only never becomes recycled certification (0.070458ms)
+✔ ML advisory signal flags extreme weight (0.119584ms)
+✔ fictional geodata distance positive (0.126875ms)
+✔ form rejects unsafe length (0.070542ms)
+✔ paper evidence with blocked recovery claim still exposes its human review queue (0.075ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 76.664291
