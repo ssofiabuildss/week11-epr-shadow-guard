@@ -20,7 +20,11 @@ See the visual wireframe below, saved as `assets/mockup.svg`.
 
 ![EPR Shadow Guard design wireframe](../assets/mockup.svg)
 
- **Mockup generation requirement:** the professor requests an *image-generated* mockup. A separate generated image from an image model must be inserted or linked here before submission; the SVG is an implementation wireframe, not a substitute for documenting actual image generation.
+ **AI-generated conceptual mockup (October 21, 2026):**
+
+![AI-generated EPR Shadow Guard mockup](../assets/ai-generated-mockup.png)
+
+This image is conceptual design evidence, not a screenshot of the implemented application. Any illustrated figures, features, or compliance statuses are fictional and must not be interpreted as tested functionality or verified recycling.
 
 ## 5. Feature flow (Mermaid)
 ```mermaid
