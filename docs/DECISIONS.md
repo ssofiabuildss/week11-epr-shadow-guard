@@ -56,3 +56,21 @@
 - Limitation: This test does not validate real recycling outcomes, reviewer decisions, or worker protection.
 - Blueprint alignment: Condition 6 — SHADOW CLAUSE.
 - Next move: Commit the verified interaction evidence and prepare independent Persona Test materials.
+
+## Session 5 — October 21, 2026 — Independent Synthetic Persona Test Correction
+
+- Persona: Mariana, fictional 34-year-old documentation reviewer.
+- Method: Independent synthetic persona feedback based on five actual application screenshots.
+- Limitation: Synthetic feedback only; not real-world user validation.
+- Main finding: Mariana initially interpreted "BLOCKED · PAPER REVIEW PENDING" as possibly meaning that the collector's paper receipt had been rejected.
+- Accepted correction: "RECYCLING CLAIM BLOCKED · PAPER EVIDENCE PENDING HUMAN REVIEW".
+- Implementation: Updated the status label in logic.js and its assertion in tests/logic.test.js.
+- Decision logic: Unchanged.
+- ADVERSARY reasoning: Clearly separate rejection of an unsupported recycling claim from continued human review of nondigital evidence.
+- Rejected alternative: Creating a new human-review workflow beyond the observed usability problem.
+- Risk addressed: Unintentional exclusion of informal collectors through ambiguous status language.
+- Blueprint alignment: Condition 6 — SHADOW CLAUSE.
+- Mechanical retest: 9 passed, 0 failed.
+- Test evidence: docs/mechanical-test-after-persona-fix.txt.
+- Remaining limitation: No real recycling or worker-protection outcomes validated.
+- Next move: Commit, push, redeploy, and verify RC-103 in production.

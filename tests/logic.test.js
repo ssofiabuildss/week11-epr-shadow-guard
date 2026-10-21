@@ -7,4 +7,4 @@ test('packaging-only never becomes recycled certification',()=>{const r=review(s
 test('ML advisory signal flags extreme weight',()=>assert.equal(mlAnomaly(46).flag,true));
 test('fictional geodata distance positive',()=>assert.ok(kmBetween(sites['Plant A'],sites['Facility B'])>0));
 test('form rejects unsafe length',()=>{assert.equal(validateNote(''),false);assert.equal(validateNote('x'.repeat(241)),false);assert.equal(validateNote('Please review paper record'),true)});
-test('paper evidence with blocked recovery claim still exposes its human review queue',()=>{const r=review(samples[2]);assert.equal(r.status,'BLOCKED · PAPER REVIEW PENDING')});
+test('paper evidence with blocked recovery claim still exposes its human review queue',()=>{const r=review(samples[2]);assert.equal(r.status,'RECYCLING CLAIM BLOCKED · PAPER EVIDENCE PENDING HUMAN REVIEW')});
