@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {samples,review,mlAnomaly,kmBetween,sites,validateNote} from '../logic.js';
+test('missing downstream proof blocks recovery',()=>{const r=review(samples[0]);assert.equal(r.blocked,true);assert.equal(r.verifiedRecycling,false)});
+test('duplicate recovery record ID flagged',()=>assert.match(review(samples[1]).reasons.join(' '),/double counting/i));
+test('paper receipt pending human review not rejected solely for paper',()=>{const r=review({...samples[2],recycledClaim:false});assert.equal(r.status,'PENDING HUMAN REVIEW');assert.equal(r.blocked,false)});
+test('material conflict flagged',()=>assert.match(review(samples[3]).reasons.join(' '),/conflicts/));
+test('packaging-only never becomes recycled certification',()=>{const r=review(samples[4]);assert.equal(r.claimAllowed,true);assert.equal(r.verifiedRecycling,false)});
+test('ML advisory signal flags extreme weight',()=>assert.equal(mlAnomaly(46).flag,true));
+test('fictional geodata distance positive',()=>assert.ok(kmBetween(sites['Plant A'],sites['Facility B'])>0));
+test('form rejects unsafe length',()=>{assert.equal(validateNote(''),false);assert.equal(validateNote('x'.repeat(241)),false);assert.equal(validateNote('Please review paper record'),true)});
