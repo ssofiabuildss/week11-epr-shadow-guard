@@ -74,3 +74,20 @@
 - Test evidence: docs/mechanical-test-after-persona-fix.txt.
 - Remaining limitation: No real recycling or worker-protection outcomes validated.
 - Next move: Commit, push, redeploy, and verify RC-103 in production.
+
+## Session 6 — October 21, 2026 — Post-Persona Production Retest
+
+- Deployment ID: dpl_7sXxwebjLYzQd7JcCcKUzKFPHVvF.
+- Production deployment: https://week11-epr-shadow-guard-kk0xizjs5-ssofia1.vercel.app
+- Git commit: ae30a4c1271efb88f4d85d0dbb092f5fe143b38a.
+- Deployment status: READY, independently confirmed through Vercel.
+- Test method: Manual RC-103 interaction on the deployed application.
+- Evidence: Actual screenshot supplied October 21, 2026.
+- Corrected status visible in evidence queue and decision panel: RECYCLING CLAIM BLOCKED · PAPER EVIDENCE PENDING HUMAN REVIEW.
+- Missing independent downstream acceptance evidence remains visible.
+- Nondigital paper receipt remains eligible for human review.
+- Recycling independently verified: NO.
+- Result: PASS for the observed RC-103 production interaction.
+- ADVERSARY conclusion: The minimal Persona Test correction resolves the identified wording ambiguity at the interface level without changing the decision logic.
+- Limitation: No real-world user validation, recycling certification, or worker-protection outcome is claimed.
+- Blueprint alignment: Condition 6 — SHADOW CLAUSE.
