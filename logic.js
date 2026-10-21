@@ -20,6 +20,6 @@ export function review(record,records=samples){
  if(record.recycledClaim&&!record.downstream)reasons.push('Independent downstream acceptance evidence missing.');
  if(record.paper)reasons.push('Nondigital paper receipt retained for human review; not automatically rejected.');
  const blocked=record.recycledClaim&&reasons.some(x=>!/Nondigital paper receipt/.test(x));
- return {status:blocked?'BLOCKED':record.paper?'PENDING HUMAN REVIEW':record.recycledClaim?'REQUIRES HUMAN VERIFICATION':'PACKAGING ONLY',reasons,blocked,verifiedRecycling:false,claimAllowed:!record.recycledClaim&&record.documented};
+ return {status:blocked?(record.paper?'BLOCKED · PAPER REVIEW PENDING':'BLOCKED'):record.paper?'PENDING HUMAN REVIEW':record.recycledClaim?'REQUIRES HUMAN VERIFICATION':'PACKAGING ONLY',reasons,blocked,verifiedRecycling:false,claimAllowed:!record.recycledClaim&&record.documented};
 }
 export function validateNote(note){if(typeof note!=='string')return false;return note.trim().length>=3&&note.length<=240;}
