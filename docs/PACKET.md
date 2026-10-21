@@ -16,7 +16,11 @@ A fictional evidence reviewer at a small Mexican packaging producer who must dec
 A public demo URL allows a reviewer to inspect fictional packaging and recovery records, see labels distinguishing documented packaging from independently substantiated downstream recovery, flag missing or potentially duplicate recovery claims, route a nondigital paper receipt to human review, reject unsupported circularity claims, and inspect a simulated sensor+ML+geodata diagnostic. No simulated or missing evidence may silently become verified. A reviewer can see why an export claim is blocked. The app must visibly state that it is a classroom demo and not compliance certification.
 
 ## 4. Visual mockup
-See `assets/mockup.svg` — a visual wireframe of the proposed evidence desk. **Mockup generation requirement:** the professor requests an *image-generated* mockup. A separate generated image from an image model must be inserted or linked here before submission; the SVG is an implementation wireframe, not a substitute for documenting actual image generation.
+See the visual wireframe below, saved as `assets/mockup.svg`.
+
+![EPR Shadow Guard design wireframe](../assets/mockup.svg)
+
+ **Mockup generation requirement:** the professor requests an *image-generated* mockup. A separate generated image from an image model must be inserted or linked here before submission; the SVG is an implementation wireframe, not a substitute for documenting actual image generation.
 
 ## 5. Feature flow (Mermaid)
 ```mermaid
