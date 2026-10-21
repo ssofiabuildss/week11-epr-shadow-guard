@@ -95,12 +95,24 @@ If the slice worked in a controlled test, it could become an evidence-integrity 
 - T11: Source provenance and limitation displayed for every case.
 - T12: Run automated tests and manually find/fix at least one *real* bug; record original behavior, fix and redeploy.
 
-## 13. Evidence and validation placeholders (to complete only when actually done)
-- Packet-created date/time: [fill after real commit]
-- First deployment URL: [pending]
-- Second deployment URL: [pending]
-- GitHub repository: [pending]
-- Mechanical test bug + commit SHA: [pending]
-- Fresh-chat persona prompt, actual screenshots, response transcript: [pending]
-- Worst confusion and ONE actual fix: [pending]
-- Three-minute live demo + 30-second reflection: [pending]
+## 13. Verified development and validation evidence
+
+- Repository: https://github.com/ssofiabuildss/week11-epr-shadow-guard
+- First production deployment: https://week11-epr-shadow-guard-ov4bxcszx-ssofia1.vercel.app
+- Second production deployment: https://week11-epr-shadow-guard-5plkbdr1m-ssofia1.vercel.app
+- Second deployment commit: 683e01e
+- Original mechanical failure: 8 passed, 1 failed; see docs/mechanical-test-before-fix.txt.
+- Original bug correction: b9eca03 — preserve paper-review status while blocking unsupported recycling.
+- Post-fix mechanical tests: 9 passed, 0 failed; evidence in docs/mechanical-test-after-fix.txt.
+- Independent synthetic Persona Test: Mariana reviewed five actual screenshots. This was synthetic feedback, not real-world user validation.
+- Single confusion: RC-103's BLOCKED label could imply rejection of the paper receipt itself.
+- Accepted wording: RECYCLING CLAIM BLOCKED · PAPER EVIDENCE PENDING HUMAN REVIEW.
+- Correction commit: ae30a4c.
+- Post-Persona mechanical tests: 9 passed, 0 failed; evidence in docs/mechanical-test-after-persona-fix.txt.
+- Corrected production deployment: https://week11-epr-shadow-guard-kk0xizjs5-ssofia1.vercel.app
+- Corrected deployment ID: dpl_7sXxwebjLYzQd7JcCcKUzKFPHVvF.
+- Production retest: RC-103 corrected wording visible; downstream evidence remains missing, paper review remains pending, and recycling remains unverified.
+- Final retest documentation commit: a331b74.
+- Persona Test transcript and screenshots: Must be attached to the final Persona deliverable.
+- Live demo video and reflection: Pending actual recording.
+- Limitations: No independent recycling certification, real worker-protection validation, or market validation has been performed.
